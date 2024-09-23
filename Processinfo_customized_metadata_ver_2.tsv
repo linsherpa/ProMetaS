@@ -1,0 +1,58 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	ProMetaSProcessinfo		ProMetaS ProcessInfo Metadata													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	prometas.processID	Process ID	Identifier for a process (eg: Process 12)		text	0	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessID
+	prometas.processDuration	Process Duration [For Batch Process]	Duration of the process  [Both: Real or simulated process] Note: It is used for batch process and not for continuously running process.The standard of ISO 8601 is followed. Example: [dateX][“T”][timeX][“/”][dateX][“T”][timeX]		none	1		TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessDuration
+	prometas.processStart	Process Start	Start time for Process. Example: [dateX][“T”][timeX] 	eg: YYYY-MM-DDTHH:mm:ss	text	2	Start: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.processDuration	ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessStart
+	prometas.processEnd	Process End	End time for Process. Example: [dateX][“T”][timeX] 	eg: YYYY-MM-DDTHH:mm:ss	text	3	, End: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.processDuration	ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessEnd
+	prometas.processLinkOnOtherData	Process Link On Other Data	Link on Other Data		text	4	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessLinkOnOtherData
+	prometas.processDescription	Process Description	Description of Process		textbox	5	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessDescription
+	prometas.processUnitOperation	Process Unit Operation	process operation as per ISO15926-4 (z.B: Mixing,pumping,filtering,etc)		none	6	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessUnitOperation
+	prometas.processStreamProcess	Process Stream	 A flux of energy/info/material that flows from source to destination (as per ISO159126) (eg:Material Flow)		none	7	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessStreamProcess
+	prometas.processSimulationOrReal	Is Simulated Process?	Categorization of process if it is simulation based or Real process (eg: true)		none	8	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessSimulationOrReal
+	prometas.proessKPIComputationEffort	Process KPI Computation Effort	Time taken for Computation of the simulated process.		none	9		TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessKPICompuationEffort
+	prometas.proessKPIComputationEffortValue	Computation Effort Value			float	10	#VALUE 	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.proessKPIComputationEffort	ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessKPICompuationEffortValue
+	prometas.proessKPIComputationEffortUnit	Computation Effort Unit			none	11	 #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.proessKPIComputationEffort	ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessKPICompuationEffortUnit
+	prometas.processKPIName	Process KPI Name	Name of the Simulated Process. (eg. Simulation 1)		text	12	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessKPIName
+	prometas.processKPIErrorOfEstimate	Error Of Estimate	Measurement of Accuracy of Prediction		none	13		TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessKPIErrorOfEstimate
+	prometas.processKPIErrorOfEstimateTermName	Term Name	Parameter Name		text	14	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.processKPIErrorOfEstimate	ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessKPIErrorOfEstimateTermName
+	prometas.processKPIErrorOfEstimateTermValue	Term Value	Parameter Value		text	15	: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.processKPIErrorOfEstimate	ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessKPIErrorOfEstimateTermValue
+	prometas.processKPIDescription	KPI Description	Information about how to calculate KPI or link to the model		textbox	16	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessKPIDescription
+	prometas.processAdditionalInformation	Process Additional Information	Additional Information regarding Process 		textbox	17	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSProcessinfo	https://prometas.zih.tu-dresden.de/ProcessAdditionalInformation
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	prometas.processUnitOperation	AGGLOMERATING	1	0												
+	prometas.processUnitOperation	AGITATING	2	1												
+	prometas.processUnitOperation	BLOWING	3	2												
+	prometas.processUnitOperation	BURNING	4	3												
+	prometas.processUnitOperation	COMPRESSING	5	4												
+	prometas.processUnitOperation	COOLING	6	5												
+	prometas.processUnitOperation	CRUSHING	7	6												
+	prometas.processUnitOperation	DELIVERING	8	7												
+	prometas.processUnitOperation	DRYING	9	8												
+	prometas.processUnitOperation	EXHAUSTING	10	9												
+	prometas.processUnitOperation	EXTRUDING	11	10												
+	prometas.processUnitOperation	FEEDING	12	11												
+	prometas.processUnitOperation	FILTERING	13	12												
+	prometas.processUnitOperation	GRINDING	14	13												
+	prometas.processUnitOperation	HEAT EXCHANGING	15	14												
+	prometas.processUnitOperation	HEATING	16	15												
+	prometas.processUnitOperation	MILLING	17	16												
+	prometas.processUnitOperation	MIXING	18	17												
+	prometas.processUnitOperation	PACKAGING	19	18												
+	prometas.processUnitOperation	PUMPING	20	19												
+	prometas.processUnitOperation	SEPARATING	21	20												
+	prometas.processUnitOperation	STORING	22	21												
+	prometas.processUnitOperation	TRANSPORTING	23	22												
+	prometas.processUnitOperation	WEIGHING	24	23												
+	prometas.processStreamProcess	MATERIAL STREAM	25	0												
+	prometas.processStreamProcess	ENERGY STREAM	26	1												
+	prometas.processStreamProcess	INFORMATION STREAM	27	2												
+	prometas.processSimulationOrReal	TRUE	28	0												
+	prometas.processSimulationOrReal	FALSE	29	1												
+	prometas.proessKPIComputationEffortUnit	day	30	0												
+	prometas.proessKPIComputationEffortUnit	hour	31	1												
+	prometas.proessKPIComputationEffortUnit	minute	32	2												
+	prometas.proessKPIComputationEffortUnit	second	33	3												
+	prometas.proessKPIComputationEffortUnit	millisecond	34	4												
+	prometas.proessKPIComputationEffortUnit	microsecond	35	5												
+	prometas.proessKPIComputationEffortUnit	nanosecond	36	6												

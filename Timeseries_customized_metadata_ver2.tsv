@@ -1,0 +1,91 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	ProMetaSTimeseries		ProMetaS2 Timeseries Metadata													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	prometas.timeseriesID	Time series ID	Unique Identifier for Time-series (eg: T4533)		text	0	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesID
+	ogc.timeseriesObservationMember	Time series Observation	One or more time series observations (eg: 1)		text	1	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#observationMember
+	ogc.timeseriesGenerationDateTime	Time series Generation Date and Time	The date the Timeseries document was generated in accordance with ISO-8601 Standard		none	2		TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#generationDate
+	prometas.timeseriesGenerationDate	Time series Generation Date	Date when time series was generated (eg: 2022-01-22)	YYYY-MM-DD	date	3	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	ogc.timeseriesGenerationDateTime	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/generationDate
+	prometas.timeseriesGenerationTime	Time series Generation Time	Time when time series was generated (eg: 12:00:21)	HH:mm:ss	text	4	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	ogc.timeseriesGenerationDateTime	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/generationTime
+	ogc.timeseriesGenerationSystem	Time series Generation System	The system (e.g. software or hardware) used to generate this document. (eg: OS Pi)		text	5	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#generationSystem
+	ogc.timeseriesTemporalExtent	Time series Temporal Extent	The temporalExtent is a time period defining the start and end of its temporal domain (i.e. the start and end of the timeseries). The standard of ISO 8601 is followed. Example: [dateX][“T”][timeX][“/”][dateX][“T”][timeX]		none	6		TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#temporalExtent
+	prometas.timeseriesTemporalExtentStart	Time series Temporal Extent Start	starting point of temporal extent (eg: 2022-01-22T12:00:00)	Example: [dateX][“T”][timeX]	text	7	Start: #VALUE,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	ogc.timeseriesTemporalExtent	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/timeseriesTemporalExtentStart
+	prometas.timeseriesTemporalExtentEnd	Time series Temporal Extent End	End point of temporal extent (eg: 2022-01-23T12:00:00)	Example: [dateY][“T”][timeY]	text	8	 End:#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	ogc.timeseriesTemporalExtent	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/timeseriesTemporalExtentEnd
+	prometas.timeseriesIsRegularSpacing	Is Regular Spacing?	If Timeseries are regularly spaced. Data is as per ISO-19013 Standard. (eg: true)		none	9	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesIsRegularSpacing
+	ogc.timeseriesSpacing	Time series Spacing	The time between points in a regularly spaced timeseries.		none	10		TRUE	FALSE		TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#timeseriesSpacing
+	prometas.timeseriesSpacingValue	Time series Spacing Value	The time between points in magnitude. (eg: 2)		float	11	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	ogc.timeseriesSpacing	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesSpacingValue
+	prometas.timeseriesSpacingUnit	Time series Spacing Unit	Unit between two time spacing as per ISO-8000. Example s-second, min-minute, ms-milisecond and so on (eg: ms)		none	12	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	ogc.timeseriesSpacing	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesSpacingUnit
+	ogc.timeseriesStatus	Time series Status	Status of time series observation (z.B: unreleased,verified,etc). For example to indicate what verification checks have taken place. (eg: verified)		text	13	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#timeseriesStatus
+	ogc.timeseriesNilReason	Nil Reason (or NaN)	This property describes the reasons that a point has been identified as null. This provides context for interpreting null points (e.g. missing, withheld etc.). (eg Change between process)		text	14	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#nilReason
+	ogc.timeseriesInterpolationtype	Interpolation Type	Defines the nature of the relationship between the time instant and the recorded value. Example, the value may represent an average across the time period since the last point (average in preceding interval). (eg: Average Preceeding)		none	15	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#interpolationType
+	ogc.timeseriesIsCumulative	Is Cumulative?	This boolean property indicates whether the series is sequentially increasing and accumulates over time; i.e. each value is added to the last so the value represents the total of a value since accumulation began. The dataype is as per ISO 19013 standard. (eg true)		none	16	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#cumulative
+	ogc.timeseriesAccumulationIntervalLength	Accumulation Interval Length	"Defines the length of time over which accumulation is recorded as per ISO 8601 standard (recommended). Example ""P"" is deisgnator for duration and T for time Designator. Duration of 10months and 3 hours will be P10MT03H"		text	17	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#accumulationIntervalLength
+	ogc.timeseriesAccumulationAnchorTime	Accumulation Anchor Time	Defines the time at which accumulation begins. According to ISO 8601 Standard		text	18	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#accumulationAnchorTime
+	ogc.timeseriesStartAnchorPoint	Start Anchor Point	StartAnchorPoint specifies a ‘ghost’ point to allow the first value of the timeseries to be interpolated correctly. ISO8601 standard (eg: 2022-01-22T12:00:00)		text	19	 #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#StartAnchorPoint
+	ogc.timeseriesEndAnchorPoint	End Anchor Point	EndAnchorPoint specifies a ‘ghost’ point to allow the first value of the timeseries to be interpolated correctly. IS0 8601 standard (eg: 2022-01-23T12:00:00)		text	20	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#EndAnchorPoint
+	ogc.timeseriesMaxGapPeriod	Maximum Gap Period	When any analysis is run over a timeseries it is important to know if it is possible to interpolate between any two adjoining points. If the join period between two adjoining points is greater than the maxGapPeriod then the series should not be interpolated between these adjoining points. ISO 8601 Standard		none	21		TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#maxGapPeriod
+	prometas.timeseriesMaxGapPeriodValue	Maximum Gap Period Value	Value of Maximum Gap Period (eg 10)		float	22	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	ogc.timeseriesMaxGapPeriod	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesMaxGapPeriodValue
+	prometas.timeseriesMaxGapPeriodUnit	Maximum Gap Period Unit	Unit of Maximum Gap Period (example : millisecond, second, minute, hour,etc) (eg seconds)		none	23	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	ogc.timeseriesMaxGapPeriod	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesMaxGapPeriodUnit
+	prometas.timeseriesAccuracy	Time series Accuracy	Specifies accuracy of the measurement. It could be list of float numbers (for many timeseries signals).It might have some relation with Sensor-metadata (datasets)		text	24	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesAccuracy
+	ogc.timeseriesTimeZone	Time Zone	The timezone that the Monitoring Feature ( for Time series) is located in. (eg UTC+1)		text	25	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#timeZone
+	ogc.timeseriesZoneOffset	Time Zone Offset	An offset is the number of hours or minutes a certain time zone is ahead of or behind GMT**. (eg +10:00 GMT)		text	26	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#zoneOffset
+	ogc.timeseriesProcessType	Process Type	Process by which time series was generated. For eg: By Algorithm, Manual Method, sensor, simulation(including models) , unknown, others. (eg: Sensor)		none	27	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#processType
+	ogc.timeseriesOriginatingProcess	Time series Originating Process	Used to identify a process that is a source to this process. Example an earlier processing step. It could also be an ID of the process or it could be a description with ordered list of sensors. (eg Sensor with id S1)		text	28	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#originatingProcess
+	prometas.timeseriesPurpose	Timeseries Purpose	The Objective/purpose of collecting the Timeseries data. (eg: To optimize parameter for process XY)		textbox	29	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesPurpose
+	prometas.timeseriesAggregation	Aggregation Method Used	The method could be selected from the link:  (https://defs.opengis.net/vocprez/object?uri=http%3A//www.opengis.net/def/timeseries/InterpolationCode/) (eg: Average in Preceding Interval)		none	30	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesAggregation
+	ogc.timeseriesAggregationDuration	Time series Aggregation Duration	If the process involves temporal aggregation of a result set, the time duration over which data has been aggregated should be expressed here. E.g. hourly, daily aggregates. (eg Hourly)	Exmple: Daily, Hourly,Monthly,etc	text	31	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://www.ogc.org/standards/om#timeseriesAggregationDuration
+	prometas.timeseriesTag	Time series Tag 	List of Tags used in Time series.		none	32		TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesTag
+	prometas.timeseriesTagNameList	Time series Tag Name List	List of Tags Names used in Time series.(eg PI1099)		text	33	 (#VALUE,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.timeseriesTag	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesTagNameList
+	prometas.timeseriesTagUnitList	Time series Tag Unit List	List of Unit of Tags used in Time series.(eg bar)		text	34	#VALUE)	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.timeseriesTag	ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesTagUnitList
+	prometas.timeseriesDataFormat	Time series Data Format	Way of storing the data/data structure on file 		text	35	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesDataFormat
+	prometas.timeseriesFileFormat	Time series File Format	Original file format(eg exel, csv,etc)		text	36	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesFileFormat
+	prometas.timeseriesAdditionalInfo	Time series Additional Information	Additional Information regarding the timeseries		textbox	37	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSTimeseries	https://prometas.zih.tu-dresden.de/TimeseriesAdditionalInfo
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	prometas.timeseriesIsRegularSpacing	TRUE	1	0												
+	prometas.timeseriesIsRegularSpacing	FALSE	2	1												
+	ogc.timeseriesIsCumulative	TRUE	3	0												
+	ogc.timeseriesIsCumulative	FALSE	4	1												
+	ogc.timeseriesInterpolationtype	Average Preceding	5	0												
+	ogc.timeseriesInterpolationtype	Average Succeeding	6	1												
+	ogc.timeseriesInterpolationtype	Constant Preceding	7	2												
+	ogc.timeseriesInterpolationtype	Constant Succeeding	8	3												
+	ogc.timeseriesInterpolationtype	Continuous	9	4												
+	ogc.timeseriesInterpolationtype	Discontinuous	10	5												
+	ogc.timeseriesInterpolationtype	Instant Total	11	6												
+	ogc.timeseriesInterpolationtype	Maximum Preceding	12	7												
+	ogc.timeseriesInterpolationtype	Maximum Succeeding	13	8												
+	ogc.timeseriesInterpolationtype	Minimum Preceding	14	9												
+	ogc.timeseriesInterpolationtype	Minimum Succeeding	15	10												
+	ogc.timeseriesInterpolationtype	Preceding Total	16	11												
+	ogc.timeseriesInterpolationtype	Total Succeeding	17	12												
+	ogc.timeseriesProcessType	Algorithm	18	0												
+	ogc.timeseriesProcessType	Manual Method	19	1												
+	ogc.timeseriesProcessType	Sensor	20	2												
+	ogc.timeseriesProcessType	Simulation	21	3												
+	ogc.timeseriesProcessType	Others	22	4												
+	prometas.timeseriesAggregation	Average Preceding	23	0												
+	prometas.timeseriesAggregation	Average Succeeding	24	1												
+	prometas.timeseriesAggregation	Constant Preceding	25	2												
+	prometas.timeseriesAggregation	Constant Succeeding	26	3												
+	prometas.timeseriesAggregation	Continuous	27	4												
+	prometas.timeseriesAggregation	Discontinuous	28	5												
+	prometas.timeseriesAggregation	Instant Total	29	6												
+	prometas.timeseriesAggregation	Maximum Preceding	30	7												
+	prometas.timeseriesAggregation	Maximum Succeeding	31	8												
+	prometas.timeseriesAggregation	Minimum Preceding	32	9												
+	prometas.timeseriesAggregation	Minimum Succeeding	33	10												
+	prometas.timeseriesAggregation	Preceding Total	34	11												
+	prometas.timeseriesAggregation	Total Succeeding	35	12												
+	prometas.timeseriesSpacingunit	day	36	0												
+	prometas.timeseriesSpacingunit	hour	37	1												
+	prometas.timeseriesSpacingunit	minute	38	2												
+	prometas.timeseriesSpacingunit	second	39	3												
+	prometas.timeseriesSpacingunit	millisecond	40	4												
+	prometas.timeseriesSpacingunit	microsecond	41	5												
+	prometas.timeseriesSpacingunit	nanosecond	42	6												
+	prometas.timeseriesMaxGapPeriodUnit	day	43	0												
+	prometas.timeseriesMaxGapPeriodUnit	hour	44	1												
+	prometas.timeseriesMaxGapPeriodUnit	minute	45	2												
+	prometas.timeseriesMaxGapPeriodUnit	second	46	3												
+	prometas.timeseriesMaxGapPeriodUnit	millisecond	47	4												
+	prometas.timeseriesMaxGapPeriodUnit	microsecond	48	5												
+	prometas.timeseriesMaxGapPeriodUnit	nanosecond	49	6												

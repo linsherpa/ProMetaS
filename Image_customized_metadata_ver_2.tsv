@@ -1,0 +1,68 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	ProMetaSImage		ProMetaS Image Metadata													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	exif.imageDateTime	Image Date Time	Date when original image(s) was taken.(ISO 8601 Standard of Date Time Format)		none	0	 	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#dateTimeOriginal
+	prometas.imageDate	Image Date	Date when the images were taken ,for example(for date):  YYYY-MM-DD.	YYYY-MM-DD	date	1	#VALUE 	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	exif.imageDateTime	ProMetaSImage	https://prometas.zih.tu-dresden.de/ImageDate
+	prometas.imageTime	Image Time	Time when original image(s) was taken.(ISO 8601 Standard of Time Format: HH:mm:ss)	HH:mm:ss	text	2	#VALUE 	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	exif.imageDateTime	ProMetaSImage	https://prometas.zih.tu-dresden.de/ImageTime
+	exif.imageFNumber	Image F Number	A measure for the open aperture of a photographic objective. (also known as Aperture value) (eg: f/4)		text	3	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#apertureValue
+	exif.imageExposureProgram	Image Exposure Program	The class of program used by camera to set exposure when the picture is taken (eg: Manual)		none	4	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#exposureProgram
+	exif.imageSpectralSensitivity	Image Spectral Sensitivity	Spectral sensitivity of each channel of camera. (example: infrared or ultraviolet or visible light) (eg: VisibleLight)		text	5	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#spectralSensitivity
+	exif.imageISO	Image ISO	Sensitivity of camera when image was shot (Also called as ISOSpeedRatings by EXIF2.2 and PhotographicSensitivity by the EXIF 2.3 spec) (eg: 400)		float	6	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#ISO
+	exif.imageShutterSpeed	Image Shutter Speed	Shutter Speed in seconds (eg: 1/1600)		text	7	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#shutterSpeedValue
+	exif.imageBrightnessValue	Image Brightness Value	The value of brightness. The unit is APEX (Additive System of Photographic Exposure)value. (eg: 1)		float	8	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#brightnessValue
+	exif.imageSubjectDistance	Image Subject Distance (in meter)	Distance to the subject ( in meters ) (eg 0.5)		float	9	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#subjectDistance
+	exif.imageLightSource1	Image Light Source	The type of light source used while taking Image/s (eg: Daylight)		text	10	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#imageLightSource
+	exif.imageFocalLength	Image Focal Length (in mm)	Actual Focal length of lens (in mm) (eg: 50mm)		float	11	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#focalLength
+	exif.imageExposureIndex	Image Exposure Index	Exposure index selected on the camera or input device at the time the image is captured. (eg 1)		text	12	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#exposureIndex
+	exif.imageFileSource1	Image File Source	Indicates the Image Source.(eg: Digital Camera)		text	13	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#fileSource
+	exif.imageExposureMode	Image Exposure Mode	Indicates the exposure mode when image was shot.(eg: Auto)		none	14	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#exposureMode
+	exif.imageWhiteBalance	Image White Balance Mode	Indicates the white balance mode set when image was shot. (for eg Auto or Manual)		none	15	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#whiteBalance
+	exif.imageContrast	Image Contrast	Indicates the direction of contrast processing applied by camera when image was shot.		text	16	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#contrast
+	exif.imageSaturation	Image Saturation	Indicates the direction of saturation processing applied by camera when image was shot.		text	17	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#saturation
+	exif.imageCameraElevationAngle	Image Camera Elevation Angle	Angle of camera with which shot was taken (eg: Straight Angle)		text	18	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#cameraElevationAngle
+	exif.imageWidth	Image Width	The number of columns of image data, equal to number of pixels per row (in pixel) (eg: 3456)		int	19	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#imageWidth
+	exif.imageHeight	Image Height	The number of rows of image data, equal to number of pixels per row (in pixel) (eg: 2304)		int	20	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#imageHeight
+	exif.imageResolutionWidth	Image Resolution Width	Pixels per resolution unit in the image width (micrometer/pixel) (eg: 10)		int	21	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#xResolution
+	exif.imageResolutionHeight	Image Resolution Height	Pixels per resolution unit in the image height. (eg: 10)		int	22	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#yResolution
+	exif.imageResolutionUnit	Image Resolution Unit	Unit of Image Resolution in both height and width direction (eg: milimeter)		text	23	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#resolutionUnit
+	exif.imageSoftware	Image Software Used	Software/firmware of camera or image input device used to generate the image. (eg: Exif Software Version 1.00 )		text	24	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#Software
+	prometas.imageRegionOfInterest	Image Region of Interest	It refers area/portion in the Image that is of interest		none	25		TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://prometas.zih.tu-dresden.de/ImageRegionOfInterest
+	prometas.imageCroppedWidth	Image Cropped Width	It refers to width of the image after being cropped (in pixels) (eg: 600)		int	26	Cropped width:#VALUE|	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.imageRegionOfInterest	ProMetaSImage	https://prometas.zih.tu-dresden.de/ImageCroppedWidth
+	prometas.imageCroppedHeight	Image Cropped Height	It refers to height of the image after being cropped (in pixels) (eg: 337)		int	27	 Cropped Height:#VALUE|	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.imageRegionOfInterest	ProMetaSImage	https://prometas.zih.tu-dresden.de/ImageCroppedHeight
+	prometas.imageCropOriginXDirection	Image Crop Origin X Direction	Starting point of crop along x-direction (in pixels) (eg: 400)		text	28	 Crop Origin X direction:#VALUE|	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.imageRegionOfInterest	ProMetaSImage	https://prometas.zih.tu-dresden.de/ImageCropOriginXDirection
+	prometas.imageCropOriginYDirection	Image Crop Origin Y Direction	Starting point of crop along Y-direction (in pixels) (eg: 400)		text	29	 Crop Origin Y direction:#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.imageRegionOfInterest	ProMetaSImage	https://prometas.zih.tu-dresden.de/ImageCropOriginYDirection
+	exif.imagePhotometricInterpretation	Image Photometric Interpretation	Specifies the intended interpretation of the pixel data. Pixel Composition. (eg: RGB)		none	30	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://exiftool.org/TagNames/EXIF.html#photometricInterpretation
+	exif.imageAdditionalInformation	Image Additional Information	Additional information regarding the Image Dataset		textbox	31	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSImage	https://prometas.zih.tu-dresden.de/ImageAdditionalInformation
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	exif.imageExposureProgram	Manual	1	0												
+	exif.imageExposureProgram	Program AE	2	1												
+	exif.imageExposureProgram	Aperture-priority AE	3	2												
+	exif.imageExposureProgram	Shutter speed priority AE	4	3												
+	exif.imageExposureProgram	Creative (Slow speed)	5	4												
+	exif.imageExposureProgram	Action (High speed)	6	5												
+	exif.imageExposureProgram	Portrait	7	6												
+	exif.imageExposureProgram	Landscape	8	7												
+	exif.imageExposureProgram	Bulb	9	8												
+	exif.imageExposureProgram	Not defined	10	9												
+	exif.imagePhotometricInterpretation	WhiteIsZero	11	0												
+	exif.imagePhotometricInterpretation	BlackIsZero	12	1												
+	exif.imagePhotometricInterpretation	RGB	13	2												
+	exif.imagePhotometricInterpretation	RGB Palette	14	3												
+	exif.imagePhotometricInterpretation	Transparency Mask	15	4												
+	exif.imagePhotometricInterpretation	CMYK	16	5												
+	exif.imagePhotometricInterpretation	YCbCr	17	6												
+	exif.imagePhotometricInterpretation	CIELab	18	7												
+	exif.imagePhotometricInterpretation	ICCLab	19	8												
+	exif.imagePhotometricInterpretation	ITULab	20	9												
+	exif.imagePhotometricInterpretation	Color Filter Array	21	10												
+	exif.imagePhotometricInterpretation	Pixar LogL	22	11												
+	exif.imagePhotometricInterpretation	Pixar LogLuv	23	12												
+	exif.imagePhotometricInterpretation	Sequential Color Filter	24	13												
+	exif.imagePhotometricInterpretation	Linear Raw	25	14												
+	exif.imagePhotometricInterpretation	Depth Map	26	15												
+	exif.imagePhotometricInterpretation	Semantic Mask	27	16												
+	exif.imageExposureMode	Auto	28	0												
+	exif.imageExposureMode	Manual	29	1												
+	exif.imageExposureMode	Auto Bracket	30	2												
+	exif.imageWhiteBalance	Auto	31	0												
+	exif.imageWhiteBalance	Manual	32	1												

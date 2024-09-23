@@ -1,0 +1,80 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	ProMetaSControlvalve2		ProMetaS Control Valve Metadata													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	prometas.controlvalveValve	Valve			none	0	,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/Valve
+	prometas.controlvalveValveNominalStroke	Nominal Stroke (mm)	The nominal travel/angle must be entered prior to initialization.		float	1	NomStroke: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveValve	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ValveNominalStroke
+	prometas.controlvalveValveManufacture	Manufacture	Clear identification of the manufacturer of the valve. 		text	2	 Manufacture: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveValve	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ValveManufacture
+	prometas.controlvalveValveType	Type	Manufacturer product Id number of the valve delivered with the actuator.		text	3	 Type: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveValve	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ValveType
+	prometas.controlvalveValveFlowDirection	Flow Direction	Flow direction of the medium against the valve trim. [eg.: BFTO(Flow to Open), FTC (flow to close), Fluctuating]		none	4	 Flow Direction: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveValve	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ValveFlowDirection
+	prometas.controlvalveValvePressureRelief	Pressure Balancing	Plug with mostly compensated stroking forces.[eg:Without, With(PTE), With (graphite), other]		none	5	 Pressure Balancing: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveValve	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ValvePressureBalancing
+	prometas.controlvalveValveLeakageClass	Facing (Leakage Class)	Type of sealing between seat and plug. [eg: Metal-to-metal, Lapped-in, Soft Seal, Nickel Seal, PTFE, PEEK, UHMWPE, FFKM,UHMWPE(polyethylene), Other]		none	6	 Facing: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveValve	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ValveLeakageClass
+	prometas.controlvalveValveAdditionalInfo	Additional Info	Additional Information regarding valve.		textbox	7	 Add Info: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveValve	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ValveAdditionalInfo
+	prometas.controlvalveSeatPlug	Seat Plug			none	8	,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/SeatPlug
+	prometas.controlvalveSeatPlugDiameter	Valve Seat Diameter (mm)	Diameter of the seat-plug in mm(DIN) (eg 12.7)		float	9	Diameter (mm): #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveSeatPlug	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/SeatPlugDiameter
+	prometas.controlvalveFlowCoefficient	Flow Coefficient (KVS wert)	Flow coefficient of the valve.		float	10	 KVS wert: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveSeatPlug	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/FlowCoefficient
+	prometas.controlvalvePlugType	Plug Type	Plug Type of the Valve. [eg Parabolic, V-port, Other]		none	11	 Type: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveSeatPlug	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/PlugType
+	prometas.controlvalveValveCharacteristics	Valve Characteristics	Valve characteristic flow versus valve travel. [eg Linear, Equal Percentage, Inherent, Other]		none	12	 Characteristics:#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveSeatPlug	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ValveCharacteristics
+	prometas.controlvalveNoiseReduction	Noise Reduction	Installed Type of valve noise reduction.  (eg None, flow divider ST1,flow divider ST2, flow divider ST3, other)		none	13	 Noise Reduction: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveSeatPlug	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/NoiseReduction
+	prometas.controlvalveSeatPlugAdditionalInfo	Additional Information	Additional Information regarding the Seat cone /plug.		textbox	14	 Add Info: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveSeatPlug	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/SeatPlugAdditionalInfo
+	prometas.controlvalveActuator	Actuator			none	15	,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/Actuator
+	prometas.controlvalveAcutatorManufacturer	Manufacturer	Clearly identifies the manufacturer of the actuator.  (eg SAMSON)		text	16	 Manufacture: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorManufacturer
+	prometas.controlvalveAcutatorMovementType	Movement Type	Design of the actuator type. (e.g. linear actuator or rotary actuator)		none	17	 Movement Type: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorMotion
+	prometas.controlvalveAcutatorPrincipleofOperation	Principle of Operation	Mode of operation of the actuator. (eg.:Single Acting, Double Acting, Other)		none	18	 Principal of Operation: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorPrincipleOfOperation
+	prometas.controlvalveAcutatorType	Type	Type of energy supply for the drive. (eg.: Pneumatic(diaphragm), Pneumatic (piston), Hydraulic, Electric, Other)		none	19	 Type: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorType
+	prometas.controlvalveActuatorEffectiveAcutatorArea	Effective Acutator Area (cm2)	Effective diaphragm or piston area of the actuator. (in cm2) (eg 12)		float	20	 Effective Surface Area(cm2): #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorEffectiveActuatorArea
+	prometas.controlvalveAcutatorLowerSignalPressureRangeValue	Lower Signal Pressure Range Value (bar)	Start value of the actuator's spring range. (in bar) (eg: 0.4)		float	21	Lower Pressure (bar): #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorLowerSignalPressureRangeValue
+	prometas.controlvalveAcutatorUpperSignalPressureRangeValue	Upper Signal Pressure Range Value (bar)	End value of the actuator's spring range. (in bar) (eg: 2)		float	22	 Upper Pressure (bar): #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorUpperSignalPressureRangeValue
+	prometas.controlvalveAcutatorFailSafePosition	Fail-Safe Position	Fail-safe position in the event of failure of the Actuator haft energy. (z.B: Air-to-Open(ATO), Air-to-close(ATC), Other)		none	23	fail safe: #VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorFailSafePosition
+	prometas.controlvalveAcutatorMaximumSupplyPressure	Maximum Supply Pressure	Maximum permissible pressure of the Actuator. (in bar) (eg: 6)		float	24	Max Pressure(bar): #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorMaximumSupplyPressure
+	prometas.controlvalveAcutatorAdditionalInfo	Additional Info	Additional information of Actuator		textbox	25	 Add Info: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveActuator	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/ActuatorAdditionalInfo
+	prometas.controlvalvePositioner	Positioner			none	26	,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/Positioner
+	prometas.controlvalvePositionerManufacturer	Positioner Manufacturer	Clearly identifies the manufacturer of the positioner. (eg: SAMSON)		text	27	Manufacture: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalvePositioner	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/PositionerManufacturer
+	prometas.controlvalvePositionerType	Positioner Type	Manufacturer product Id number of the positioner. (eg: 3730-1)		text	28	 Type: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalvePositioner	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/PositionerType
+	prometas.controlvalveCoupledDeviceInfo	Coupled Device Info			none	29	,	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/CoupledDeviceInfo
+	prometas.controlvalveCoupledDeviceInfoManufacturer	Manufacturer	Clearly identifies the manufacturer of the coupled Devices. (eg: SAMSON)		text	30	Manufacture: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveCoupledDeviceInfo	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/CoupledDeviceInfoManufacturer
+	prometas.controlvalveCoupledDeviceInfoDescription	Description	Manufacturer product Id number of the coupled Devices		textbox	31	 Desc: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.controlvalveCoupledDeviceInfo	ProMetaSControlvalve2	https://prometas.zih.tu-dresden.de/CoupledDeviceInfoDescription
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	prometas.controlvalveValveFlowDirection	FTO (Flow to Open)	1	0												
+	prometas.controlvalveValveFlowDirection	FTC (Flow to Close)	2	1												
+	prometas.controlvalveValveFlowDirection	Fluctuating	3	2												
+	prometas.controlvalveValveFlowDirection	Other	4	3												
+	prometas.controlvalveValvePressureRelief	Without	5	0												
+	prometas.controlvalveValvePressureRelief	With (PTE)	6	1												
+	prometas.controlvalveValvePressureRelief	With (Graphite)	7	2												
+	prometas.controlvalveValvePressureRelief	Other	8	3												
+	prometas.controlvalveValveLeakageClass	Metal-to-metal	9	0												
+	prometas.controlvalveValveLeakageClass	Lapped-in	10	1												
+	prometas.controlvalveValveLeakageClass	Soft Seal	11	2												
+	prometas.controlvalveValveLeakageClass	Nickel Seal	12	3												
+	prometas.controlvalveValveLeakageClass	PTFE	13	4												
+	prometas.controlvalveValveLeakageClass	PEEK	14	5												
+	prometas.controlvalveValveLeakageClass	UHMWPE	15	6												
+	prometas.controlvalveValveLeakageClass	FFKM	16	7												
+	prometas.controlvalveValveLeakageClass	UHMWPE(polyethylene)	17	8												
+	prometas.controlvalveValveLeakageClass	Other	18	9												
+	prometas.controlvalveAcutatorMovementType	linear	19	0												
+	prometas.controlvalveAcutatorMovementType	rotary	20	1												
+	prometas.controlvalveAcutatorMovementType	other	21	2												
+	prometas.controlvalvePlugType	Parabolic	22	0												
+	prometas.controlvalvePlugType	V-port	23	1												
+	prometas.controlvalvePlugType	Other	24	2												
+	prometas.controlvalveValveCharacteristics	linear	25	0												
+	prometas.controlvalveValveCharacteristics	equal percentage	26	1												
+	prometas.controlvalveValveCharacteristics	inherent	27	2												
+	prometas.controlvalveValveCharacteristics	other	28	3												
+	prometas.controlvalveNoiseReduction	None	29	0												
+	prometas.controlvalveNoiseReduction	Flow Divider ST1	30	1												
+	prometas.controlvalveNoiseReduction	Flow Divider ST2	31	2												
+	prometas.controlvalveNoiseReduction	Flow Divider ST3	32	3												
+	prometas.controlvalveNoiseReduction	Other	33	4												
+	prometas.controlvalveAcutatorPrincipleofOperation	Single Acting	34	0												
+	prometas.controlvalveAcutatorPrincipleofOperation	Double Acting	35	1												
+	prometas.controlvalveAcutatorPrincipleofOperation	Other	36	2												
+	prometas.controlvalveAcutatorType	Pneumatic (Diaphragm)	37	0												
+	prometas.controlvalveAcutatorType	Pneumatic (Piston)	38	1												
+	prometas.controlvalveAcutatorType	Hydraulic	39	2												
+	prometas.controlvalveAcutatorType	Electric	40	3												
+	prometas.controlvalveAcutatorType	Other	41	4												
+	prometas.controlvalveAcutatorFailSafePosition	Air-to-open(ATO)	42	0												
+	prometas.controlvalveAcutatorFailSafePosition	Air-to-close(ATC)	43	1												
+	prometas.controlvalveAcutatorFailSafePosition	Other	44	2												

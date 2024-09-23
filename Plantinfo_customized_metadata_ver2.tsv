@@ -1,0 +1,20 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	ProMetaSPlantinfo		ProMetaS PlantInfo Metadata													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	dexpi.plantSiteIdentificationCode	Site Identification Code	Id of the plant site (eg DC)		text	0	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/SiteIdentificationCodeAssignmentClass
+	dexpi.plantSiteName	Site Name	Name of Site (eg: DEXPI City)		text	1	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/SiteNameAssignmentClass
+	dexpi.industrialComplexIdentificationCode	Industrial Complex Identification Code	The identification code of the industrial complex. (eg: I-Chain)		text	2	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/IndustrialComplexIdentificationCodeAssignmentClass
+	dexpi.industrialComplexName	Industrial Complex Name	The name of industrial complex. (eg: Isophorone Chain)		text	3	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/IndustrialComplexNameAssignmentClass
+	dexpi.processPlantIdentificationCode	Process Plant Identification Code	ID of the Process Plant (eg ABC)		text	4	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/ProcessPlantIdentificationCodeAssignmentClass
+	dexpi.processPlantName	Process Plant Name	Name of the process plant (eg: ABC plant)		text	5	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/ProcessPlantNameAssignmentClass
+	dexpi.plantAreaIdentificationCode	Plant Area Identification Code	The identification code of the plant area according to ISA-95 (eg F4)		text	6	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/PlantAreaIdentificationCodeAssignmentClasss
+	dexpi.plantAreaName	Plant Area Name	The name of the plant area according to ISA-95. (eg Area G4)		text	7	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/AreaIsa95NameAssignmentClass
+	dexpi.plantSectionIdentificationCode	Plant Section Identification Code	The identification code of the plant section. (eg: 10)		text	8	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/PlantSectionIdentificationCodeAssignmentClass
+	dexpi.plantSectionName	Plant Section Name	The name of the plant section. (eg: Utilities)		text	9	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/PlantSectionNameAssignmentClass
+	dexpi.plantSystemIdentificationCode	Plant System Identification Code	Identification Code of the plant (eg: X123)		text	10	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/PlantSystemIdentificationCodeAssignmentClass
+	dexpi.plantSystemName	Plant System Name	Name of the Plant System. (eg: System X123)		text	11	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	http://sandbox.dexpi.org/rdl/PlantSystem
+	prometas.plantNumberOfEquipment	Number of Equipment	(eg: 5)		int	12	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	https://prometas.zih.tu-dresden.de/PlantNumberOfEquipment
+	prometas.plantNumberOfPipingNetworkSystems	Number of Piping Network Systems	(eg: 10)		int	13	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	https://prometas.zih.tu-dresden.de/PlantNumberOfPipingNetworkSystems
+	prometas.plantNumberOfProcessInstrumentationFunctions	Number of Process Instrumentation Functions	(eg: 12)		int	14	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	https://prometas.zih.tu-dresden.de/PlantNumberOfProcessInstrumentationFunctions
+	prometas.plantAdditionalInfo	Plant Additional Info			textbox	15	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSPlantinfo	https://prometas.zih.tu-dresden.de/PlantAdditionalInfo
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												

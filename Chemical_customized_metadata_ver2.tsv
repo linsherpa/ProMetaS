@@ -1,0 +1,23 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	ProMetaSChemical		ProMetaS Chemical Metadata													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	prometas.chemicalElement	Chemical Element			none	0		TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalElement
+	edam.chemicalName	Chemical Name	Unique name of a chemical compound.(According to IUPAC) (eg: Azane)		text	1	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	http://edamontology.org/data_0990
+	prometas.chemicalRole	Role	Role it plays in the process (eg: Reagent)		none	2	 Role:#VALUE,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalRole
+	prometas.chemicalConcentrationType	Concentration Type	Concentration Type (eg: Chemical Element)		none	3	 Concentration: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalConcentrationType
+	prometas.chemicalConcentrationValue	Chemical Concentration Value	Measure of Amount of Concentration (with units) (eg 17)		float	4	 ( #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalConcentrationValue
+	prometas.chemicalConcentrationUnits	Chemical Concentration Units	Unit for Concentration (eg mol/litre)		text	5	#VALUE),	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalConcentrationUnits
+	prometas.chemicalProductName	Product Name	Commercial Name of the Chemical (eg: Anhydrous Ammonia)		text	6	 Product Name: #VALUE,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalProductName
+	prometas.chemicalFlowRateValue	Chemical Flow Rate Value	Amount of chemical flow value (eg: 80)		float	7	 Flow Rate:#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalFlowRateValue
+	prometas.chemicalFlowRateUnit	Chemical Flow Rate Unit	Unit for Chemical Flow (eg: mol/sec)		text	8	  #VALUE,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalFlowRateUnit
+	ebi.chemicalTemperature	Temperature (°C)	Value of Temperature of the Chemical ( in °C) (eg: 31)		float	9	 Temperature(°C): #VALUE,	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	http://www.ebi.ac.uk/efo/EFO_0001702
+	prometas.chemicalDescription	Chemical Description	Description regarding the  chemical (or its process)		textbox	10	 Desc: #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	prometas.chemicalElement	ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalDescription
+	prometas.chemicalAnalysisSoftware	Analysis Software	Software used in the chemical process. (eg: MATLAB)	 	text	11	#VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalAnalysisSoftware
+	prometas.chemicalAdditionalInformation	Chemical Additional Info	Additional Information about the  chemical (process)		textbox	12	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE		ProMetaSChemical	https://prometas.zih.tu-dresden.de/ChemicalAdditionalInformation
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	prometas.chemicalRole	Solvent	1	0												
+	prometas.chemicalRole	Reagent	2	1												
+	prometas.chemicalRole	Catalyst	3	2												
+	prometas.chemicalConcentrationType	Molar Concentration	4	0												
+	prometas.chemicalConcentrationType	Extinction Concentration	5	1												
+	prometas.chemicalConcentrationType	Color Concentration	6	2												
